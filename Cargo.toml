@@ -1,0 +1,10 @@
+[package]
+name = "wiregui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+# networkmanager = "0.5"
+networkmanager = { git = "https://github.com/CptLemming/networkmanager-rs", rev = "dcda498" }
+dbus = "0.9"
