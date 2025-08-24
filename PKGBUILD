@@ -1,6 +1,6 @@
 # Maintainer: CptLemming
 pkgname=wiregui
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Wireguard network manager"
 license=("MIT")

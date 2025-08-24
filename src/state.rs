@@ -99,7 +99,7 @@ impl StateModel {
                     }
                 } else {
                     if entry.active {
-                        let _ = deactivate_connection(name.clone());
+                        let _ = deactivate_connection(entry.name.clone());
                     }
                     entry.active = false;
                 }
