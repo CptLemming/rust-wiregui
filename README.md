@@ -11,4 +11,6 @@ The UI is built using [GPUI](https://www.gpui.rs/)
 cargo arch
 
 sudo pacman -U ./<package-bundle>
+
+sudo cp wiregui.desktop /usr/share/applications/wiregui.desktop
 ```

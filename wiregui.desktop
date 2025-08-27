@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WireGui
+Exec=/usr/bin/wiregui
+Terminal=false
+Type=Application
+Icon=wireguard
+Comment=WireGuard UI
