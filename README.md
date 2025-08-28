@@ -14,3 +14,10 @@ sudo pacman -U ./<package-bundle>
 
 sudo cp wiregui.desktop /usr/share/applications/wiregui.desktop
 ```
+
+## Import
+
+```sh
+nmcli connection import type wireguard file <file>
+```
+
