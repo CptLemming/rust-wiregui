@@ -6388,7 +6388,7 @@ dependencies = [
 
 [[package]]
 name = "wiregui"
-version = "0.1.2"
+version = "0.1.4"
 dependencies = [
  "dbus",
  "gpui",

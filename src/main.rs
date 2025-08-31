@@ -6,6 +6,7 @@ mod app;
 mod connections;
 mod info;
 mod net;
+mod notify;
 mod state;
 
 fn main() {

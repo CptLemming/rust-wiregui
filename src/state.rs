@@ -3,6 +3,7 @@ use gpui::*;
 use crate::{
     connections::ConnectionItem,
     net::{activate_connection, deactivate_connection, get_connection_list},
+    notify::send_notification,
 };
 
 #[derive(Clone)]
@@ -92,14 +93,17 @@ impl StateModel {
                 if entry.name == name {
                     if entry.active {
                         let _ = deactivate_connection(name.clone());
+                        let _ = send_notification(name.clone(), false);
                         entry.active = false;
                     } else {
                         let _ = activate_connection(name.clone());
+                        let _ = send_notification(name.clone(), true);
                         entry.active = true;
                     }
                 } else {
                     if entry.active {
                         let _ = deactivate_connection(entry.name.clone());
+                        let _ = send_notification(entry.name.clone(), false);
                     }
                     entry.active = false;
                 }
